@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <link rel="stylesheet" href="normalize.css" >
+  <link rel="stylesheet" href="style.css">
+  <script src="countdown.js" defer></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div dataset-countdown class="countdown">
+    <div class="countdown__container">
+      
+      <!-- Header -->
+      <div class="countdown__header">
+        <h1 dataset-countdown-timer="title">Coming Soon</h1>
+      </div>
+      <!-- Header END-->
+
+      <div class="countdown__body">
+
+        <!-- Countdown timer -->
+        <div class="countdown-timer">
+          <div class="countdown-timer__item">
+            <div dataset-countdown-timer="day" class="num-anim">00</div>
+            <span>Days</span>
+          </div>
+    
+          <div class="countdown-timer__item">
+            <div dataset-countdown-timer="hour" class="num-anim">00</div>
+            <span>Hours</span>
+          </div>
+    
+          <div class="countdown-timer__item">
+            <div dataset-countdown-timer="minute" class="num-anim">00</div>
+            <span>Minutes</span>
+          </div>
+          
+          <div class="countdown-timer__item">
+            <div dataset-countdown-timer="second" class="num-anim">00</div>
+            <span>Seconds</span>
+          </div>
+        </div>
+        <!-- Countdown timer END-->
+
+      </div>
+      
+    </div>
+  </div>
+  
+</body>
+</html>

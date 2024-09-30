@@ -1,0 +1,71 @@
+:root {
+  /* COLOR */
+  --clr-dark: #09070e;
+  --clr-light: whitesmoke;
+
+  --clr-bg-primary: var(--clr-dark);
+  --clr-font-primary: var(--clr-light);
+
+  /* FONT */
+  --smaller: 1.25; 
+
+  --fw-primary: 400;
+  --ff-primary: Poppins, -apple-system, Roboto, Ubuntu,  sans-serif;
+
+  --fs-primary: 1rem;
+  --fs-countdown-timer: calc(3.375rem * var(--smaller));
+  --fs-countdown-text: calc(0.75rem * var(--smaller));
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: var(--clr-bg-primary);
+  color: var(--clr-font-primary);
+
+  font-family: var(--ff-primary);
+  font-size: var(--fs-primary);
+  font-weight: var(--fw-primary);
+  
+}
+
+.countdown {
+  height: 100%;
+  display: grid;
+  place-content: center;
+}
+/* Timer */
+.countdown__header {
+  font-size: 4rem;
+  text-align: center;
+
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+.countdown-timer__item {
+  /* border: 1px solid lightgreen; */
+}
+
+.countdown-timer__item > div {
+  font-size: var(--fs-countdown-timer);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  min-width: 1.4em;
+}
+
+.countdown-timer__item > span {
+  display: block;
+  text-align: center;
+  font-size: var(--fs-countdown-text);
+}
