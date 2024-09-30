@@ -98,6 +98,9 @@ const animateValue = (node, end, start = 0, duration = 1000 ) => {
 		}
 	};
 
+	// NOTE the deadline was changed to loop count (next day)
+	config.deadline = getEndOfNextDay();
+
 	const countdownHandler = (config) => {
 	
 		// Check if provided date is valid
